@@ -21,9 +21,10 @@ func main() {
 	for indice, fruta := range frutas {
 		fmt.Println(indice, fruta)
 	}
-
 	for _, fruta := range frutas {
 		fmt.Println(fruta)
 	}
+
+	fmt.Println("Uma só:", frutas[2])
 	// END OMIT
 }

@@ -19,7 +19,7 @@ func fazTudo(tarefas []string) {
 		wg.Add(1)
 		go func(t string) {
 			defer wg.Done()
-			fmt.Println(t)
+			fazAlgoImportante(t)
 		}(tarefa)
 		//time.Sleep(10 * time.Millisecond)
 	}

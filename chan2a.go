@@ -14,7 +14,7 @@ func main() {
 	val, ok := <-ch1
 	fmt.Printf("Lendo de ch1 (aberto): %v, %v\n", val, ok)
 
-	val, ok = <-ch1 // ... o código vai travar aqui
+	val, ok = <-ch1 // ... o código vai travar aqui.
 	fmt.Printf("Lendo de ch1 (fechado): %v, %v\n", val, ok)
 	// END OMIT
 }

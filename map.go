@@ -18,12 +18,12 @@ func main() {
 	if v, ok := m2[2]; ok {
 		fmt.Println("achou: ", v)
 	}
-
 	if v, ok := m2[4]; ok {
 		fmt.Println("achou: ", v)
 	}
 
-	for k, v := range m2 {
+	delete(m2, 3)
+	for k, v := range m2 { // Ordem aleatória!
 		fmt.Println(k, v)
 	}
 	// END OMIT

@@ -1,13 +1,13 @@
 Ready 2 Go
 Uma Introdução Prática a Linguagem Go
-11 Jan 2018
-Tags: gdg-poa, golang
+17 Mar 2018
+Tags: floripa-gophers, golang
 
-Daniela Petruzalek
-Senior Software Engineer, Globo.com
-daniela.petruzalek@gmail.com
-https://github.com/danicat
-@danicat83
+Ellen Körbes
+# Senior Software Engineer, Globo.com
+e@ellenkorbes.com
+https://github.com/ellenkorbes
+@ellenkorbes
 
 * Agenda
 
@@ -22,37 +22,17 @@ https://github.com/danicat
 * Workshop Ready 2 Go
 
 Versão completa do Workshop:
-
 [[https://github.com/ellenkorbes/ready-to-go]]
 
-Altamente recomendado: 
-[[https://code.visualstudio.com]]
+Versão em slides:
+[[https://github.com/danicat/ready2go]]
 
-Alternativa vim-go: 
-[[https://github.com/fatih/vim-go]]
+Versão 20 minutos (essa talk):
+[[https://github.com/ellenkorbes/ready2go20]]
 
-* O que é o Go?
+* O que é Go? Pra que serve? Qual sua filosofia?
 
-Nasceu no Google em 2007
-
-- Objetivo: escalabilidade / "systems"
-
-Combinar os melhores recursos das linguagens mais populares:
-
-- C/C++
-- Java
-- Python
-
-Princípios básicos:
-
-- Simplicidade
-- Ortogonalidade
-
-* O que NÃO é o Go?
-
-- Uma linguagem orientada a objetos
-- Uma linguagem funcional
-- Uma linguagem de uso genérico (ainda)
+Pesquisa no Google.
 
 .image GOPHER_SAFARI.png _ 300
 
@@ -62,11 +42,14 @@ Gophers!
 
 .image gopher_6.jpg _ 300
 
-Slack: [[https://invite.slack.golangbridge.org]]
+Slack:
+[[https://invite.slack.golangbridge.org]]
 
-Grupo de estudos: hangouts nas quintas-feiras às 22:00 BRT
-
+Grupo de estudo (quintas-feiras 10PM):
 [[https://hangouts.google.com/hangouts/_/crg.eti.br/golang]]
+
+Women Who Go Floripa:
+[[https://www.facebook.com/WWGFloripa/]]
 
 * Usos de Go pelo mundo
 
@@ -90,21 +73,24 @@ Linguagem #9 de acordo com o GitHub em 2017. (+52% em relação a 2016)
 
 * Variáveis
 
-Tipos primitivos: int, bool, string, float64, complex128
-Outras estruturas: struct, array, slice, map
+Tipos primitivos: int, bool, string, float64, complex128.
+Outras estruturas: struct, array, slice, map.
 
 .play var.go
 
 * Ponteiros
 
-Operadores * (derreferência) e & (endereço)
+Operadores:
+
+& → endereço
+* → derreferência
 
 .play pointers.go
 
 * Escopo
 
-- Publico (inicial maiuscula)
-- privado (inicial minuscula)
+- Público (inicial maiúscula)
+- Privado (inicial minúscula)
 
 .code testpkg.go
 
@@ -114,7 +100,7 @@ Operadores * (derreferência) e & (endereço)
 
 .play func.go
 
-* Funções #2
+* Funções II: O Retorno
 
 .play func2.go
 
@@ -122,7 +108,7 @@ Operadores * (derreferência) e & (endereço)
 
 .play for.go /^func main/,/^}/
 
-* Controle de Fluxo #2
+* Controle de Fluxo II: A Vingança
 
 .play switch.go /START OMIT/,/END OMIT/
 
@@ -158,45 +144,52 @@ Operadores * (derreferência) e & (endereço)
 
 .play chan.go /START OMIT/,/END OMIT/
 
-* Tipos de Channels #1
+* Tipos de Channels
 
 .play chan2a.go /START OMIT/,/END OMIT/
 
-* Tipos de Channels #2
+* Tipos de Channels 2: A Aventura Continua
 
 .play chan2b.go /START OMIT/,/END OMIT/
 
-* Técnicas de Concorrência
+* Técnicas de Concorrência: Generator
 
 .play chan3.go /START OMIT/,/END OMIT/
 
-* Pipeline
+* Técnicas de Concorrência: Pipeline
 
 .play pipeline.go /START OMIT/,/END OMIT/
 
-* Programação Concorrente #1
+* Programação Concorrente: Não Concorrente
 
 .play conc.go /START OMIT/,/END OMIT/
 
-* Programação Concorrente #2
+* Programação Concorrente: "Meio" Concorrente
 
 .play conc2.go /START OMIT/,/END OMIT/
 
-* Programação Concorrente #3
+* Programação Concorrente: Go Routines Everywhere \o/
 
 .play conc3.go /START OMIT/,/END OMIT/
 
 * Palavras Finais
 
-- A proposta do Go é ser simples e consistente
-- A palavra chave é **concorrência*
-- Não tem **generics*!!!
+- A proposta do Go é ser simples e consistente.
+- A palavra chave é **concorrência*.
+- Não tem **generics*! ☠
+
+* Licão de Casa
+
+- Veja exemplos disso tudo em ação.
+- Refaça os exemplos no seu editor.
+- (Não vale copiar e colar!)
+- Have fun 😊
+- [[https://gobyexample.com]]
 
 * Referências
 
 - [[https://www.golang.org]]
 - [[https://blog.golang.org]]
 - [[https://golang.org/doc]]
-
 
 .image GoCommunity.png _ 600

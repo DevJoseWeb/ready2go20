@@ -4,15 +4,14 @@ import "fmt"
 
 func main() {
 	func() {
-		fmt.Println("hello world")
+		fmt.Println("Função anônima!")
 	}()
-
-	f := highOrder()
+	f := retornaFunção()
 	f()
 }
 
-func highOrder() func() {
+func retornaFunção() func() {
 	return func() {
-		fmt.Println("high order function")
+		fmt.Println("Função como valor.")
 	}
 }
