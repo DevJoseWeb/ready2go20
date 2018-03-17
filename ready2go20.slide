@@ -4,20 +4,8 @@ Uma Introdução Prática a Linguagem Go
 Tags: floripa-gophers, golang
 
 Ellen Körbes
-# Senior Software Engineer, Globo.com
 e@ellenkorbes.com
-https://github.com/ellenkorbes
 @ellenkorbes
-
-* Agenda
-
-- O que é o Go?
-
-- Estrutura básica do programa
-
-- Concorrência
-
-.image GOPHER_LEARN.png _ 400
 
 * Workshop Ready 2 Go
 
@@ -29,6 +17,8 @@ Versão em slides:
 
 Versão 20 minutos (essa talk):
 [[https://github.com/ellenkorbes/ready2go20]]
+
+.image GOPHER_LEARN.png _ 400
 
 * O que é Go? Pra que serve? Qual sua filosofia?
 
